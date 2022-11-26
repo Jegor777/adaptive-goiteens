@@ -1,0 +1,29 @@
+.fetures{
+    @media screen  and (min-wight:$desktop) {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+
+}
+.fetures-item{
+    width: 270px;
+    
+}
+.icon-box{
+    margin-bottom: 30px;
+    background-color: #f5f4fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    // padding: 25px 100px ;
+    // width: 270px;
+    
+    
+}
+
+.fetures-icon{
+    width: 70px;
+    height: 70px;
+}
