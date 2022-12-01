@@ -1,13 +1,29 @@
 .fetures{
     @media screen  and (min-wight:$desktop) {
-        display: flex;
+        
         justify-content: space-between;
     }
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
+
     
 
 }
 .fetures-item{
     width: 270px;
+    @media screen and (min-width: $tablet) {
+        width: calc((100% - 60px) / 2);
+        margin: 15px;
+    }
+    
+}
+.fetures-item:not(:last-child){
+    @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
+    }
     
 }
 .icon-box{
