@@ -1,9 +1,12 @@
 .fetures{
-    @media screen  and (min-wight:$desktop) {
+    @media screen and (min-width: 1200px) {
         
-        justify-content: space-between;
+        justify-content: center;
+    
+        
     }
-    @media screen and (min-width: $tablet) {
+
+    @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
         margin: -15px;
@@ -14,7 +17,7 @@
 }
 .fetures-item{
     width: 270px;
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: 768px) {
         width: calc((100% - 60px) / 2);
         margin: 15px;
     }
@@ -42,4 +45,23 @@
 .fetures-icon{
     width: 70px;
     height: 70px;
+}
+.fetures-title{
+    
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    
+        margin-bottom: 10px;
+    
+}
+.fetures-text{
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+
+    color: var(--secondary-text-color);
 }
