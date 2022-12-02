@@ -113,7 +113,6 @@ ul {
 }
 
 .container, .nav {
-  outline: solid 1px tomato;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -644,10 +643,28 @@ nav {
 }
 
 /* Секція герой */
-.customers-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .customers-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media screen and (max-width: 767px) {
+  .customers-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .customers-item {
+    width: calc((100% - 60px) / 2);
+  }
 }
 
 .customers-item:not(:last-child) {
@@ -673,6 +690,11 @@ nav {
 .customers-link:hover, .customers-link:focus {
   color: var(--accent-color);
   border: 1px solid var(--accent-color);
+}
+
+.customers-title {
+  text-align: center;
+  margin: 15px;
 }
 
 .customers-link svg {
