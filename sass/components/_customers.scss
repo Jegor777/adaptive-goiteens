@@ -1,5 +1,5 @@
 .customers-list{
-    display: flex;
+    
     @media screen and (min-width: 1200px){
         display: flex;
     }
@@ -12,14 +12,19 @@
     }
 }
 .customers-item{
+    
     @media screen and (min-width: 768px) {
-        width: calc((100% - 60px) / 2);
+        width: calc((100% - 30px  * 3) / 2);
         
     }
     
 }
 .customers-item:not(:last-child){
-    margin-right: 30px;
+    
+    @media screen and (min-width: 1200px){
+        margin-right: 30px;
+    }
+
 }
 .customers-link{
     width: 170px;

@@ -64,7 +64,7 @@ ul {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -93,6 +93,7 @@ ul {
 
 /* Головна сторінка */
 .section, .footer, .our-team, .hero, .header {
+  width: 100%;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -528,9 +529,6 @@ nav {
   }
 }
 
-.fetures-item {
-  width: 270px;
-}
 @media screen and (min-width: 768px) {
   .fetures-item {
     width: calc((100% - 60px) / 2);
@@ -626,7 +624,12 @@ nav {
   background-color: #f5f4fa;
 }
 
-@media screen and (min-width: 1200px) {
+.team-title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
   .team {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -636,7 +639,7 @@ nav {
     margin: -15px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .team {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -647,13 +650,9 @@ nav {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 480px) {
   .team-item {
-    width: calc((100% - 120px) / 4);
-    margin: 15px;
-    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
+    width: 450px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -663,6 +662,21 @@ nav {
     -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
             box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-item {
+    width: calc((100% - 120px) / 4);
+    margin: 15px;
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .team-item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 
@@ -690,6 +704,9 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .icon-item:not(:last-child) {
@@ -719,10 +736,6 @@ nav {
   color: var(--thirdly-text-color);
 }
 
-.team-img {
-  width: 270px;
-}
-
 .team-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -737,11 +750,6 @@ nav {
 }
 
 /* Секція герой */
-.customers-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
 @media screen and (min-width: 1200px) {
   .customers-list {
     display: -webkit-box;
@@ -762,12 +770,14 @@ nav {
 
 @media screen and (min-width: 768px) {
   .customers-item {
-    width: calc((100% - 60px) / 2);
+    width: calc((100% - 90px) / 2);
   }
 }
 
-.customers-item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 1200px) {
+  .customers-item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .customers-link {
