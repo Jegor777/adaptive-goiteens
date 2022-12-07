@@ -84,10 +84,19 @@ nav{
 
 .navlist{
     display: flex;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    flex-wrap: wrap;
+    width: 294px;
+    justify-content: space-between;
+    margin: auto;
     @media screen and (min-width: 480px){
         display: flex;
         flex-direction: column;
         
+    }
+    @media screen and (min-width: 1200px) {
+        display: flex;
     }
 
 }
