@@ -39,25 +39,25 @@
 }
 
 .mobile-menu{
-      @media screen and (max-width: 767px ) {
+    @media screen and (max-width: 767px) {
         display: none;
         position: absolute;
         top: 0;
         left: 0;
-        height: 100vh;
         width: 480px;
-        color: var(--thirdly-text-color);
+        height: 100vh;
+        background-color: var(--thirdly-text-color);
     }
-
     @media screen and (min-width: 768px){
         display: flex;
+
     }
     // background-color: antiquewhite;
 
     &.is-open{
         display: block;
     }
-  
+    
 }
 .nav{
     @extend .container;
@@ -73,6 +73,13 @@
     letter-spacing: 0.03em;
 
     color: var(--primary-text-color);
+
+    @media screen and (max-width: 767px){
+        margin: 16px 15px;
+    }
+        @media screen and (max-width: 1199px){
+        font-size: 24px;
+    }
 }
 .logo span{
     color: var(--accent-color);
@@ -80,6 +87,7 @@
 
 nav{
     margin-left: 93px;
+    
 }
 
 .navlist{
@@ -146,8 +154,11 @@ nav{
     }
     
 }
-
-
+.contact-item:first-child{
+    @media screen and (min-width: 768px) {
+        margin-bottom: 10px;
+   }
+}
 /* .contact-item:nth-child(2){
     margin-left: 50px;
 } */
