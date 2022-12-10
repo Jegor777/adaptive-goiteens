@@ -92,32 +92,32 @@ ul {
 }
 
 /* Головна сторінка */
-.section, .footer, .our-team, .hero, .header {
-  width: 100%;
+.section, .footer, .our-team, .hero {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-@media screen and (min-wight: 480px) {
-  .section, .footer, .our-team, .hero, .header {
-    width: 480px;
-  }
-}
-@media screen and (min-wight: 768px) {
-  .section, .footer, .our-team, .hero, .header {
-    width: 768px;
-  }
-}
-@media screen and (min-wight: 1200px) {
-  .section, .footer, .our-team, .hero, .header {
-    width: 1200px;
-  }
-}
 
 .container, nav, .nav {
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-wight: 480px) {
+  .container, nav, .nav {
+    width: 480px;
+  }
+}
+@media screen and (min-wight: 768px) {
+  .container, nav, .nav {
+    width: 768px;
+  }
+}
+@media screen and (min-wight: 1200px) {
+  .container, nav, .nav {
+    width: 1200px;
+  }
 }
 
 /* Хедер */
@@ -342,21 +342,35 @@ nav {
   background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/bgi.jpg);
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-title {
-  width: 696px;
+  text-align: center;
+  text-transform: uppercase;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-  font-style: normal;
+  color: var(--thirdly-text-color);
+  width: 360px;
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
-  text-align: center;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--thirdly-text-color);
+}
+@media screen and (min-width: 768px) {
+  .hero-title {
+    width: 307px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-weight: 900;
+    width: 696px;
+    font-size: 44px;
+    line-height: 60px;
+    letter-spacing: 0.06em;
+  }
 }
 
 .hero-button {
@@ -812,7 +826,7 @@ nav {
 
 @media screen and (min-width: 1200px) {
   .customers-item:not(:last-child) {
-    margin-right: 30px;
+    margin-right: 15px;
   }
 }
 

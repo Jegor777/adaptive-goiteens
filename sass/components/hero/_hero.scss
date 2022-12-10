@@ -10,25 +10,51 @@
         url(/images/bgi.jpg);
     background-position: center;
     background-repeat: no-repeat;
+    background-size:cover ;
 
 }
 
 .hero-title{
-    width: 696px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
+    text-align: center;
+     text-transform: uppercase;
 
-    font-style: normal;
-    font-weight: 900;
+     margin-left: auto;
+    margin-right: auto;
+     margin-bottom: 30px;
+
+     color: var(--thirdly-text-color);
+      width: 360px;
+
+     font-weight: 900;
     font-size: 44px;
     line-height: 60px;
-    text-align: center;
+letter-spacing: 0.06em;  
+    @media screen and (min-width: 768px) {
+       width: 307px;
+       
+    }
+ @media screen and (min-width: 1200px) {
+        font-weight: 900;
+         width: 696px;
+    font-size: 44px;
+    line-height: 60px;
     letter-spacing: 0.06em;
-    text-transform: uppercase;
+    }
+    }
+   
+    
+    
+   
 
-    color: var(--thirdly-text-color);
-}
+    
+    
+   
+
+    
+
+    
+   
+
 .hero-button{
     display: inline-flex;
     background-color: var(--accent-color);
