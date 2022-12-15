@@ -3,12 +3,14 @@
     justify-content: center;
     margin: 50px;
 }
-
+.container 
 .action{
-    display: flex;
+    display: none;
     justify-content: space-between;
+   
+    }
     
-}
+
 /* оверлей */
 .thumb-action{
     position: relative;

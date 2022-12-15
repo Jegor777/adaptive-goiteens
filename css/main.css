@@ -104,17 +104,17 @@ ul {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (min-wight: 480px) {
+@media screen and (min-width: 480px) {
   .container, nav, .nav {
     width: 480px;
   }
 }
-@media screen and (min-wight: 768px) {
+@media screen and (min-width: 768px) {
   .container, nav, .nav {
     width: 768px;
   }
 }
-@media screen and (min-wight: 1200px) {
+@media screen and (min-width: 1200px) {
   .container, nav, .nav {
     width: 1200px;
   }
@@ -195,6 +195,7 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .logo {
@@ -217,19 +218,12 @@ ul {
   }
 }
 
-.nav-item {
-  display: inline;
-}
-
 .logo span {
   color: var(--accent-color);
 }
 
 nav {
   position: relative;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 @media screen and (max-width: 767px) {
@@ -237,7 +231,6 @@ nav {
     font-weight: 500;
     font-size: 40px;
     line-height: 47px;
-    text-align: center;
     letter-spacing: 0.02em;
   }
 }
@@ -643,10 +636,8 @@ nav {
   margin: 50px;
 }
 
-.action {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.container .action, .nav .action, nav .action {
+  display: none;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -887,13 +878,23 @@ nav {
   background-color: var(--background-color);
 }
 
-.footer .container, .footer .nav, .footer nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+@media screen and (min-width: 768px) {
+  .footer .container, .footer .nav, .footer nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer .container, .footer .nav, .footer nav {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
 }
 .footer .logo {
   color: var(--thirdly-text-color);
