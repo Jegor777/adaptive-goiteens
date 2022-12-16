@@ -1,5 +1,5 @@
 .footer{
-    @extend .section;
+   
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--background-color);
@@ -27,6 +27,7 @@
     .logo{
         color: var(--thirdly-text-color);
     }
+    
     .contacts-list{
         display: block;
     
@@ -52,6 +53,15 @@
         margin-top: 9px;
     }
 }
+.footer-contacts{
+    @media screen and (min-width: 480px) {
+        margin-bottom: 60px;
+        text-align: center;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-right: 70px;
+    }
+  }
 
 
 

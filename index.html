@@ -24,7 +24,7 @@
             </button>
             <div class="mobile-menu" data-menu>
                 
-                <nav>
+                <nav class="navigation">
                     <ul class="navlist">
         
                         <li  class="nav-item"><a class="nav-link" href="./">Студія</a></li>
@@ -37,32 +37,35 @@
                     </ul>
                 </nav> 
                 <div>
-                    <ul class="contacts-list" >
-                        
-                        <li class="contact-item" >    <a class="contact-link mail" href="">
-                            <svg width="16" height="12" class="contact-icon">
-                                <use href="./symbol-defs.svg#icon-mail"></use>
-                            </svg>
-                            info@devstudio.com</a> </li>
-                        <li class="contact-item" >  <a class="contact-link tel" href="">
-                            <svg width="16" height="12" class="contact-icon">
-                                <use href="./symbol-defs.svg#icon-phone"></use>
-                            </svg>
-                            +38 096 111 11 11</a> </li>
-                        
-                    </ul>
-                    <ul class="social-list">
-                        <li  class="social-item">
-                          <a class="social-link" href="">Instagram</a>  
+                    <div class="contacts">
+                        <ul class="contacts-list" >
+                            
+                            <li class="contact-item" >    <a class="contact-link mail" href="">
+                                <svg width="16" height="12" class="contact-icon">
+                                    <use href="./symbol-defs.svg#icon-mail"></use>
+                                </svg>
+                                info@devstudio.com</a> </li>
+                            <li class="contact-item" >  <a class="contact-link tel" href="">
+                                <svg width="16" height="12" class="contact-icon">
+                                    <use href="./symbol-defs.svg#icon-phone"></use>
+                                </svg>
+                                +38 096 111 11 11</a> </li>
+                            
+                        </ul>
+                </div>
+                
+                    <ul class="network-list">
+                        <li class="network-item">
+                            <a class="network-link" href="" rel="noopener,noreferrer">Instagram</a>
                         </li>
-                        <li class="social-item">
-                            <a class="social-link" href="">Twitter</a>
+                        <li class="network-item">
+                            <a class="network-link" href="" rel="noopener,noreferrer">Twitter</a>
                         </li>
-                        <li class="social-item">
-                            <a class="social-link" href="">Facebook</a>
+                        <li class="network-item">
+                            <a class="network-link" href="" rel="noopener,noreferrer">Facebook</a>
                         </li>
-                        <li class="social-item">
-                            <a class="social-link" href="">LinkedIn</a>
+                        <li class="network-item">
+                            <a class="network-link" href="" rel="noopener,noreferrer">LinkedIn</a>
                         </li>
                     </ul>
                 </div>   
@@ -461,7 +464,7 @@
             <div  class="send">               
                 <b class="footertext">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</b>
                 
-                    <div>
+                    <div class="footer-field">
                         <input  class="send-input" type="mail" name="mail" id="mail" placeholder="E-mail">
                     
                     <button class="footer-button">Підписатись
